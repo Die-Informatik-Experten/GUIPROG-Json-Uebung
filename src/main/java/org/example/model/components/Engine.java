@@ -2,7 +2,7 @@ package org.example.model.components;
 
 public class Engine
 {
-    private double engineRPM;
+    private double engineRPS;
 
     private double temperatureEngineOil;
 
@@ -10,9 +10,9 @@ public class Engine
 
     private double fuelConsumptionLitresPer100km;
 
-    public Engine(double engine_rpm, double temperatureEngineOil, double temperatureCoolingFluid, double fuelConsumptionLitresPer100km)
+    public Engine(double engine_rps, double temperatureEngineOil, double temperatureCoolingFluid, double fuelConsumptionLitresPer100km)
     {
-        this.engineRPM = engine_rpm;
+        this.engineRPS = engine_rps;
         this.temperatureEngineOil = temperatureEngineOil;
         this.temperatureCoolingFluid = temperatureCoolingFluid;
         this.fuelConsumptionLitresPer100km = fuelConsumptionLitresPer100km;
@@ -20,12 +20,12 @@ public class Engine
 
     public double getEngine_rpm()
     {
-        return this.engineRPM;
+        return this.engineRPS;
     }
 
     public void setEngine_rpm(double engine_rpm)
     {
-        this.engineRPM = engine_rpm;
+        this.engineRPS = engine_rpm;
     }
 
     public double getTemperatureEngineOil()
